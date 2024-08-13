@@ -1,0 +1,141 @@
+:root {
+    --color-text: #e6e2da;
+    --color-blue: #4040f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    /* border: 2px solid brown; */
+}
+
+body {
+    background-color: rgb(48, 48, 48);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+#container {
+    background-color: black;
+    color: var(--color-text);
+    width: 80%;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#main-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.menu-header {
+    width: 50%;
+}
+
+.menu {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.menu-item {
+    align-content: center;
+}
+
+.menu-item-link {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.menu-item-link:visited {
+    color: rgb(121, 121, 158);
+}
+
+#main-section {
+    display: flex;
+    flex: 1;
+    padding: 0 20px;
+}
+
+#main-section-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#main-section-left h1 {
+    font-size: 3.5rem;
+}
+
+#main-section-left h2 {
+    color: var(--color-blue);
+}
+
+#main-section-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#main-section-right-img {
+    align-self: center;
+    width: 80%;
+}
+
+#footer {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+#footer-left {
+    width: 30%;
+    padding: 0 20px;
+    display: column;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.footer-button {
+    display: list-item;
+    width: 70%;
+    font-size: 1.2rem;
+    color: var(--color-text);
+    margin: 10px 0;
+    background-color: var(--color-blue);
+    border-style: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#footer-right {
+    width: 70%;
+    height: auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#footer-img-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+}
+
+.footer-img {
+    display: list-item;
+    max-height: 30px;
+    width: auto;
+}

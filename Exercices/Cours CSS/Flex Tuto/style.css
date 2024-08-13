@@ -1,0 +1,55 @@
+#div1 {
+    background-color: yellow;
+}
+
+#div2 {
+    background-color: blue;
+}
+
+#div3 {
+    background-color: green;
+}
+
+#div4 {
+    background-color: red;
+}
+
+#div5,
+#div6,
+#div7,
+#div8 {
+    background-color: orange;
+}
+
+.container-flex {
+    width: 700px;
+    height: 600px;
+    border: 16px solid grey;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    align-content: center;
+    /* gap: 15px 30px; */
+}
+
+.item {
+    border: 5px solid black;
+    width: 100px;
+    height: 100px;
+    font-size: 2.5em;
+    font-weight: bold;
+    align-content: center;
+    text-align: center;
+}
+
+.container-flex :nth-child(odd) {
+    height: 200px;
+    flex-grow: 3;
+}
+
+.container-flex :nth-child(even) {
+    height: 150px;
+    flex-grow: 1;
+}

@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-text: rgb(204, 204, 204);
+    --color-buttons: rgb(63, 63, 167);
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.5;
+}
+
+body {
+    background: rgb(32, 32, 32);
+    color: var(--color-text);
+    height: 100vh;
+}
+
+#main-menu {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 20px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    place-items: center;
+    list-style-type: none;
+}
+
+.menu-item-link {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+#main-section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    place-items: center;
+    height: 60%;
+}
+
+#main-section-left {
+    align-items: center;
+    align-content: center;
+    margin: 20px;
+}
+
+#main-section-right {
+    align-items: center;
+}
+
+#main-section-right-img {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#footer {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+#footer-left {
+    display: grid;
+    grid-template-rows: auto;
+    padding: 20px;
+}
+
+.footer-button {
+    border-radius: 15px;
+    background-color: var(--color-buttons);
+    border: none;
+    margin: 5px;
+    height: 2.5rem;
+}
+
+#footer-right {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 20px;
+}
+
+#footer-img-list {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-items: center;
+}
+
+.footer-img {
+    height: 40px;
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1;
+        color: var(--color-buttons);
+    }
+}
+
+@media (max-width: 500px) {
+    #main-menu {
+        grid-template-columns: 100%;
+    }
+
+    .menu {
+        place-items: start;
+    }
+
+    #main-section {
+        grid-template-columns: 100%;
+    }
+
+    #footer {
+        grid-template-columns: 100%;
+    }
+
+    p {
+        font-size: 0.5;
+        color: yellow;
+    }
+}
